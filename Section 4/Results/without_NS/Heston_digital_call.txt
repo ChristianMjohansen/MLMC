@@ -1,0 +1,44 @@
+
+**********************************************************
+*** MLMC file version 0.9     produced by              ***
+*** MATLAB mlmc_test on 09-May-2021 00:49:42           ***
+**********************************************************
+
+**********************************************************
+*** Convergence tests, kurtosis, telescoping sum check ***
+*** using N =100000000 samples                           ***
+**********************************************************
+
+ l   ave(Pf-Pc)    ave(Pf)   var(Pf-Pc)  var(Pf)   kurtosis    check     cost
+-------------------------------------------------------------------------------
+ 0   5.6946e-01  5.6946e-01  2.174e-01  2.174e-01  0.00e+00  0.00e+00  1.00e+00 
+ 1   1.5393e-02  5.8491e-01  5.682e-02  2.143e-01  1.58e+01  1.57e-01  2.00e+00 
+ 2   1.1269e-03  5.8606e-01  3.688e-02  2.140e-01  2.45e+01  8.51e-02  4.00e+00 
+ 3  -3.4793e-04  5.8572e-01  2.286e-02  2.141e-01  3.96e+01  2.21e-02  8.00e+00 
+ 4  -2.5635e-04  5.8541e-01  1.487e-02  2.142e-01  6.08e+01  1.82e-01  1.60e+01 
+ 5  -1.4459e-04  5.8528e-01  1.007e-02  2.142e-01  8.98e+01  6.16e-02  3.20e+01 
+ 6  -7.3159e-05  5.8523e-01  6.969e-03  2.142e-01  1.30e+02  8.01e-02  6.40e+01 
+ 7  -3.2884e-05  5.8518e-01  4.885e-03  2.142e-01  1.85e+02  5.36e-02  1.28e+02 
+ 8  -1.6618e-05  5.8519e-01  3.430e-03  2.142e-01  2.64e+02  9.22e-02  2.56e+02 
+
+ WARNING: kurtosis on finest level = 263.765207 
+ indicates MLMC correction dominated by a few rare paths; 
+ for information on the connection to variance of sample variances,
+ see http://mathworld.wolfram.com/SampleVarianceDistribution.html
+
+
+******************************************************
+*** Linear regression estimates of MLMC parameters ***
+******************************************************
+
+ alpha = 1.003104  (exponent for MLMC weak convergence)
+ beta  = 0.527654  (exponent for MLMC variance) 
+ gamma = 1.000000  (exponent for MLMC cost) 
+
+***************************** 
+*** MLMC complexity tests *** 
+***************************** 
+
+   eps       value    mlmc_cost   std_cost    N_l 
+----------------------------------------------------------- 
+
