@@ -24,5 +24,7 @@ xlabel('Number of iterations')
 ylabel('Absolute error')
 axis([1 length(err) min(err) max(err) ])
 
+%approx order
+q = log(abs((err(end)-err(end-1))/(err(end-1)-err(end-2))))/log(abs((err(end-1)-err(end-2))/(err(end-2)-err(end-3))))
 
 print(gcf,'-depsc','-painters','Results/NewtonErrors.eps')
